@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Configuration;
-using DemoMessages;
 using Microsoft.ServiceBus.Messaging;
+using ServiceBusDemo.Messages;
 
-namespace DemoClient
+namespace ServiceBusDemo.Client
 {
     class Program
     {
         static void Main()
         {
-            var connectionString = ConfigurationManager.AppSettings["serviceBus.ConnectionString"];
+            var connString = ConfigurationManager
+                .ConnectionStrings["azure.ServiceBus"];
+
             var queueClient =
-              QueueClient.CreateFromConnectionString(connectionString, "demo");
+              QueueClient.CreateFromConnectionString(connString.ConnectionString, "demo");
 
             // Configure the callback options.
             var options = new OnMessageOptions

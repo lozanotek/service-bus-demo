@@ -1,4 +1,4 @@
-﻿namespace DemoMessages
+﻿namespace ServiceBusDemo.Messages
 {
     public class HelloCommand
     {
