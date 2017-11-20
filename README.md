@@ -1,3 +1,4 @@
+![alt text](http://lozanotek.com/images/logo.gif "Created by Lozanotek, Inc.")
 # Service Bus Demo - Azure for ASP.NET Developers
 Repository the service bus demo for the Azure for ASP.NET Developers presention.
 
